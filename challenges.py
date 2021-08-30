@@ -490,9 +490,70 @@
 ############################################################################################
 
 # Challenge 45
+#
+# total = 0
+#
+# while total <= 50:
+#     number = int(input("Enter a number: "))
+#     total += number
+#     print(f"The total is {total}")
+
 # Challenge 46
+
+# condition = True
+#
+# while condition:
+#     number = int(input("Enter a number: "))
+#     if number < 5:
+#         number
+#     elif number > 5:
+#         print(f"\nThe last number you entered was a {number}")
+#         condition = False
+
 # Challenge 47
+
+# total = 0
+#
+# first_number = int(input("Enter the first number: "))
+# second_number = int(input("Enter the second number: "))
+# new_total = first_number + second_number
+#
+# continue_adding = input("Do you want to continue adding numbers: Y/N: ").lower()
+#
+# while continue_adding == "y":
+#     first_number = int(input("\nEnter the first number: "))
+#     second_number = int(input("Enter the second number: "))
+#     new_total += first_number + second_number
+#
+#     continue_adding = input("\nDo you want to continue adding numbers: Y/N: ").lower()
+#
+# if continue_adding == 'n':
+#     total += new_total
+#     print(total)
+
 # Challenge 48
+
+# count = 0
+#
+# name = input("Enter a name: ")
+# print(f"{name} has now been invited")
+# count += 1
+#
+# continue_inviting = input("Do you want to continue inviting people to your party?: Y/N: ").lower()
+#
+# while continue_inviting == "y":
+#     name = input("\nEnter a name: ")
+#     print(f"{name} has now been invited")
+#     count += 1
+#     continue_inviting = input("\nDo you want to continue inviting people to your party?: Y/N: ").lower()
+#
+# if continue_inviting == "n":
+#     if count == 1:
+#         print(f"\n{count} person is coming to the party")
+#     elif count > 1:
+#         print(f"\n{count} people are coming to the party")
+
+
 # Challenge 49
 # Challenge 50
 # Challenge 51
