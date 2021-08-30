@@ -14,6 +14,7 @@ Part 1: Learning Python
 * Challenges 20 - 26: Strings
 * Challenges 27 - 34: Maths
 * Challenges 35 - 44: For Loop
+
 Challenges 45 - 51: While Loop
 Challenges 52 - 59: Random
 Challenges 60 - 68: Turtle Graphics
