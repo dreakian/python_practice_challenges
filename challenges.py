@@ -555,27 +555,210 @@
 
 
 # Challenge 49
+
+# compnum = 50
+# count = 0
+#
+# number = int(input("Enter a number: "))
+#
+# while number != compnum:
+#     if number < compnum:
+#         print("Guess is too low")
+#         count += 1
+#         number = int(input("\nEnter a number: "))
+#     elif number > compnum:
+#         print("Guess is too high")
+#         count += 1
+#         number = int(input("\nEnter a number: "))
+#
+# if number == compnum:
+#     print(f"\nWell done, you took {count} attempts")
+
+
 # Challenge 50
+
+# number = int(input("Enter a number between 10 and 20: "))
+#
+# while number < 10 or number > 20:
+#     if number < 10:
+#         print("\nToo low")
+#         number = int(input("Enter a number between 10 and 20: "))
+#     elif number > 20:
+#         print("\nToo high")
+#         number = int(input("Enter a number between 10 and 20: "))
+#
+# if 10 <= number <= 20:
+#     print("\nThank you")
+
 # Challenge 51
 
+# num = 10
+# condition = None
+# changed_num = num - 1
+#
+# print(f"There are {num} green bottles hanging on the wall, {num} green bottles hanging on the wall,"
+#       f"and if 1 green bottle should accidentally fall...")
+# question = int(input("How many green bottles will be hanging on the wall?: "))
+#
+# while changed_num != 0 and question == changed_num:
+#     print(f"There will be {changed_num} green bottles hanging on the wall, "
+#           f"{changed_num} green bottles hanging on the wall,"
+#           f"and if 1 green bottle should accidentally fall...")
+#     question = int(input("\nHow many green bottles will be hanging on the wall?: "))
+#     changed_num = changed_num - 1
+#
+# if question != changed_num:
+#     print("No, try again")
+#
+# elif changed_num == 0:
+#     print("\nThere are no more green bottles hanging on the wall")
 
-
-
-
-
-
-
-
-
-
+############################################################################################
+##############################          RANDOM           ###################################
+############################################################################################
 
 # Challenge 52
-# Challenge 53
-# Challenge 54
-# Challenge 55
-# Challenge 56
-# Challenge 57
-# Challenge 58
-# Challenge 59
-# Challenge 60
 
+# import random as r
+#
+# print(r.randint(1, 100))
+
+# Challenge 53
+#
+# import random as r
+#
+# fruit_list = ["Orange", "Apple", "Strawberry", "Banana", "Peach"]
+#
+# print(r.choice(fruit_list))
+
+# Challenge 54
+
+# import random as r
+#
+# options = ["h", "t"]
+#
+# computer_choice = r.choice(options)
+#
+# user_choice = input("Choose heads or tails: H/T: ").lower()
+#
+# if user_choice == computer_choice:
+#     print("You win")
+# elif user_choice != computer_choice:
+#     print("Bad luck")
+#
+# print(f"Computer selected: {computer_choice}")
+
+# Challenge 55
+#
+# import random as r
+#
+# random_choice = r.randint(1, 5)
+# print(random_choice)
+#
+# user_choice = int(input("Choose a number between 1 and 5: "))
+#
+# if user_choice == random_choice:
+#     print("Well done")
+# elif user_choice < random_choice:
+#     print("Too low")
+#     user_choice_second = int(input("\nChoose another number between 1 and 5: "))
+#     if user_choice_second == random_choice:
+#         print("Correct")
+#     else:
+#         print("You lose")
+# elif user_choice > random_choice:
+#     print("Too high")
+#     user_choice_second = int(input("\nChoose another number between 1 and 5: "))
+#     if user_choice_second == random_choice:
+#         print("Correct")
+#     else:
+#         print("You lose")
+
+# Challenge 56
+
+# import random as r
+#
+# random_choice = r.randint(1, 10)
+# print(random_choice)
+#
+# user_choice = int(input("Enter a number: "))
+#
+# while user_choice != random_choice:
+#     user_choice = int(input("Enter a number: "))
+
+
+# Challenge 57
+
+# import random as r
+#
+# random_choice = r.randint(1, 10)
+# print(random_choice)
+#
+# user_choice = int(input("Enter a number: "))
+#
+# while user_choice != random_choice:
+#     if user_choice < random_choice:
+#         print("Too low")
+#         user_choice = int(input("Enter a number: "))
+#     elif user_choice > random_choice:
+#         print("Too high")
+#         user_choice = int(input("Enter a number: "))
+
+# Challenge 58
+
+# import random as r
+#
+# number_of_questions = 5
+# score = 0
+# count = 0
+#
+# while count != 5:
+#     num1 = r.randint(0, 100)
+#     num2 = r.randint(0, 100)
+#     answer = num1 + num2
+#     user_answer = int(input(f"\nWhat is {num1} + {num2}?: "))
+#
+#     if user_answer == answer:
+#         score += 1
+#         count += 1
+#     elif user_answer != answer:
+#         score = score
+#         count += 1
+#
+# print(f"\nYou got {score} out of {number_of_questions} correct")
+
+# Challenge 59
+
+# import random as r
+#
+# colors = ["red", "yellow", "blue", "green", "purple"]
+# random_color = r.choice(colors)
+#
+# print(colors)
+# user_choice = input("\nPick a color from the list above: ").lower()
+#
+# while user_choice != random_color:
+#     if random_color == colors[0]:
+#         print("\nI bet you're RED with anger")
+#         user_choice = input("Pick a color from the list above: ")
+#     elif random_color == colors[1]:
+#         print("\nI bet you're YELLOW with shame")
+#         user_choice = input("Pick a color from the list above: ")
+#     elif random_color == colors[2]:
+#         print("\nYou are probably feeling BLUE right now")
+#         user_choice = input("Pick a color from the list above: ")
+#     elif random_color == colors[3]:
+#         print("\nI bet you are GREEN with envy")
+#         user_choice = input("Pick a color from the list above: ")
+#     elif random_color == colors[4]:
+#         print("\nI bet you're PURPLE with confusion")
+#         user_choice = input("Pick a color from the list above: ")
+#
+# if user_choice == random_color:
+#     print("\nWell done")
+
+############################################################################################
+##############################        TURTLE GRAPHICS           ############################
+############################################################################################
+
+# Challenge 60
