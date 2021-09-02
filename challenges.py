@@ -762,3 +762,245 @@
 ############################################################################################
 
 # Challenge 60
+
+# import turtle as t
+#
+# t.hideturtle()
+#
+# for i in range(4):
+#     t.forward(100)
+#     t.right(90)
+#
+# t.exitonclick()
+
+# Challenge 61
+
+import turtle as t
+
+# t.hideturtle()
+#
+# for i in range(3):
+#     t.left(120)
+#     t.forward(100)
+#
+# t.exitonclick()
+
+# Challenge 62
+
+# import turtle as t
+#
+# t.hideturtle()
+#
+# t.circle(50)
+#
+# t.exitonclick()
+
+# Challenge 63
+
+# import turtle as t
+#
+# t.hideturtle()
+#
+#
+# def draw_first_square():
+#
+#     t.fillcolor("red")
+#     t.begin_fill()
+#
+#     for a in range(4):
+#         t.forward(100)
+#         t.right(90)
+#
+#     t.end_fill()
+#     t.forward(130)
+#
+#
+# def draw_second_square():
+#
+#     t.fillcolor("yellow")
+#     t.begin_fill()
+#
+#     for b in range(4):
+#         t.forward(100)
+#         t.right(90)
+#
+#     t.end_fill()
+#     t.forward(130)
+#
+#
+# def draw_third_square():
+#
+#     t.fillcolor("blue")
+#     t.begin_fill()
+#
+#     for c in range(4):
+#         t.forward(100)
+#         t.right(90)
+#
+#     t.end_fill()
+#
+#
+# draw_first_square()
+# draw_second_square()
+# draw_third_square()
+#
+# t.exitonclick()
+
+# Challenge 64
+
+# import turtle as t
+#
+# t.hideturtle()
+# t.speed(0)
+#
+# for rotating_the_triangles in range(5):
+#     t.tilt(5)
+#     t.forward(10)
+#     for drawing_the_triangles in range(1):
+#         t.forward(300)
+#         t.left(-144)
+#
+# t.exitonclick()
+
+# Challenge 65
+#
+# import turtle as t
+#
+# t.hideturtle()
+#
+#
+# def draw_one():
+#     t.right(270)
+#     t.forward(300)
+#     t.right(90)
+#
+#
+# def move_pen():
+#
+#     t.penup()
+#     t.forward(100)
+#     t.pendown()
+#
+#
+# def draw_two():
+#
+#     t.forward(200)
+#     t.right(90)
+#     t.forward(150)
+#     t.right(90)
+#     t.forward(200)
+#     t.right(-90)
+#     t.forward(150)
+#     t.right(-90)
+#     t.forward(200)
+#
+#
+# def draw_three():
+#     t.forward(200)
+#     t.right(270)
+#     t.forward(150)
+#     t.right(-90)
+#     t.forward(120)
+#     t.right(180)
+#     t.forward(120)
+#     t.right(270)
+#     t.forward(150)
+#     t.right(-90)
+#     t.forward(200)
+#
+#
+# draw_one()
+# move_pen()
+# draw_two()
+# move_pen()
+# draw_three()
+#
+# t.exitonclick()
+
+# Challenge 66
+
+# import turtle as t
+# import random as r
+#
+# color_list = ["red", "yellow", "blue", "green", "orange"]
+#
+# for i in range(8):
+#     random_color = r.choice(color_list)
+#     t.pencolor(random_color)
+#     t.forward(100)
+#     t.right(45)
+#
+# t.exitonclick()
+
+# Challenge 67
+
+# import turtle as t
+#
+# t.hideturtle()
+# t.speed(0)
+#
+# for rotate_loop in range(10):
+#     t.forward(0.1)
+#     t.right(36)
+#     for draw_octagon_loop in range(8):
+#         t.forward(100)
+#         t.right(45)
+#
+# t.exitonclick()
+
+# Challenge 68
+
+# import random as r
+# import turtle as t
+#
+# t.speed(0)
+# t.hideturtle()
+#
+# number_of_lines = r.randint(5, 20)
+# length_of_lines = r.randint(20, 100)
+# angle_of_turn = r.randint(1, 360)
+#
+#
+# def random_pattern():
+#     for pattern in range(number_of_lines):
+#         t.forward(length_of_lines)
+#         t.right(angle_of_turn)
+#
+#
+# random_pattern()
+#
+# t.exitonclick()
+
+# Challenge 69
+# Challenge 70
+# Challenge 71
+# Challenge 72
+# Challenge 73
+# Challenge 74
+# Challenge 75
+# Challenge 76
+# Challenge 76
+# Challenge 77
+# Challenge 78
+# Challenge 79
+# Challenge 80
+# Challenge 81
+# Challenge 82
+# Challenge 83
+# Challenge 84
+# Challenge 85
+# Challenge 86
+# Challenge 87
+# Challenge 88
+# Challenge 89
+# Challenge 90
+# Challenge 91
+# Challenge 92
+# Challenge 93
+# Challenge 94
+# Challenge 95
+# Challenge 96
+# Challenge 97
+# Challenge 98
+# Challenge 99
+# Challenge 100
