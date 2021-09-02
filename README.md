@@ -16,7 +16,7 @@ Part 1: Learning Python
 * Challenges 35 - 44: For Loop --- COMPLETE
 * Challenges 45 - 51: While Loop --- COMPLETE
 * Challenges 52 - 59: Random --- COMPLETE
-* Challenges 60 - 68: Turtle Graphics
+* Challenges 60 - 68: Turtle Graphics --- COMPLETE 
 * Challenges 69 - 79: Tuples, Lists and Dictionaries
 * Challenges 80 - 87: More String Manipulation
 * Challenges 88 - 95: Numeric Arrays
