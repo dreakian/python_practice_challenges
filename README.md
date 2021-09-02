@@ -1,11 +1,9 @@
 # python_practice_challenges
-Practice problems come from the document: "Python by Example: Learning to Program in 150" by Nichola Lacey as published by Cambridge University Press
+Practice problems come from the book: "Python by Example: Learning to Program in 150" by Nichola Lacey as published by Cambridge University Press
 
-This file will be updated to reflect my progress in completing the challenges from this document. 
+This file will be updated to reflect my progress in completing the challenges from this book. 
 
-As of now, I have completed Challenges 1 to 44. 
-
-Below is the table of contents for the document. An ***** indicates a completed section.
+Below is the table of contents for the document. An "--- COMPLETE" indicates a completed section. 
 
 Part 1: Learning Python
 
