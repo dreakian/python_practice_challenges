@@ -972,17 +972,222 @@ import turtle as t
 # t.exitonclick()
 
 # Challenge 69
+
+# country_names_tuple = ("USA", "Brazil", "Japan", "Germany", "Russia")
+# print(country_names_tuple)
+#
+# user_country = input("Enter a country from the tuple: ")
+#
+# print(country_names_tuple.index(user_country))
+
 # Challenge 70
+
+# country_names_tuple = ("USA", "Brazil", "Japan", "Germany", "Russia")
+# print(country_names_tuple)
+#
+# user_country = input("Enter a country from the tuple: ")
+# print(country_names_tuple.index(user_country))
+#
+# user_country_number = int(input("Enter a number between 0 and 4: "))
+# print(country_names_tuple[user_country_number])
+
 # Challenge 71
+
+# sports_list = ["Soccer", "Football"]
+#
+# print(sports_list)
+# user_favorite_sport = input("Enter a sport that isn't already in the list: ")
+# sports_list.append(user_favorite_sport)
+#
+# sorted_sports_list = sorted(sports_list)
+# print(sorted_sports_list)
+
 # Challenge 72
+
+# school_subjects_list = ["Math", "Science", "History", "Art", "Reading", "Programming"]
+# print(school_subjects_list)
+# user_delete_school_subject = input("Which subject do you dislike?: ")
+#
+# school_subjects_list.remove(user_delete_school_subject)
+#
+# print(school_subjects_list)
+
 # Challenge 73
+
+# favorite_foods_dictionary = {}
+# number_of_favorite_foods = 4
+#
+# for favorite_food in range(1, number_of_favorite_foods + 1):
+#     user_favorite_food = input(f"Enter your favorite food: ")
+#     favorite_foods_dictionary[f"{favorite_food}"] = user_favorite_food
+#
+# print(f"\n{favorite_foods_dictionary}")
+#
+# user_remove_item = input(f"\nSelect a number from {favorite_foods_dictionary} to remove a food item: ")
+#
+# favorite_foods_dictionary.pop(user_remove_item)
+#
+# print(sorted(favorite_foods_dictionary.values()))
+
+
 # Challenge 74
+
+# color_list = []
+# number_of_colors = 10
+#
+# for color in range(number_of_colors):
+#     user_color = input("Enter a color: ")
+#     color_list.append(user_color)
+#
+# print(color_list)
+#
+# start_number = int(input("Enter a number between 0 and 4: "))
+# end_number = int(input("Enter a number between 5 and 9: "))
+#
+# print(color_list[start_number:end_number + 1])
+
 # Challenge 75
+
+# number_list = [111, 222, 333, 444]
+#
+# for number in range(len(number_list)):
+#     print(number_list[number])
+#
+# user_number = int(input("\nEnter a three-digit number: "))
+#
+# if user_number in number_list:
+#     print(number_list.index(user_number))
+# elif user_number != number_list:
+#     print("\nThat is not in the number list")
+
+
 # Challenge 76
-# Challenge 76
+
+# people_to_add = 3
+# invitation_list = []
+#
+#
+# def invite_people():
+#     for person in range(people_to_add):
+#         person = input("Enter a name: ")
+#         invitation_list.append(person)
+#
+#
+# def continue_adding_question():
+#     invite_more_people = input("\nDo you want to add another person? Y/N: ").lower()
+#
+#     if invite_more_people == 'y':
+#         add_more_people()
+#         continue_adding_question()
+#
+#     elif invite_more_people == 'n':
+#         display_results()
+#
+#
+# def add_more_people():
+#     person = input("Enter a name: ")
+#     invitation_list.append(person)
+#
+#
+# def display_results():
+#     print(f"\nYou have invited {len(invitation_list)} to your party! \nThis is the list of people: {invitation_list}")
+#
+#
+# invite_people()
+# continue_adding_question()
+
 # Challenge 77
+
+# people_to_add = 3
+# invitation_list = []
+#
+#
+# def invite_people():
+#     for person in range(people_to_add):
+#         person = input("Enter a name: ").lower()
+#         invitation_list.append(person)
+#
+#
+# def continue_adding_question():
+#     invite_more_people = input("\nDo you want to add another person? Y/N: ").lower()
+#
+#     if invite_more_people == 'y':
+#         add_more_people()
+#         continue_adding_question()
+#
+#     elif invite_more_people == 'n':
+#         display_results()
+#
+#
+# def add_more_people():
+#     person = input("Enter a name: ").lower()
+#     invitation_list.append(person)
+#
+#
+# def display_results():
+#     print(f"\nYou have invited {len(invitation_list)} to your party! "
+#           f"This is your party invitation list: {invitation_list}")
+#
+#
+# def remove_person():
+#     party_person = input("\nEnter the name of someone in your party invitation list: ").lower()
+#     print(invitation_list.index(party_person))
+#
+#     remove_party_person = input(f"\nDo you still want {party_person} to come to the party? Y/N: ").lower()
+#
+#     if remove_party_person == 'n':
+#         invitation_list.remove(party_person)
+#         print(f"\nYou have removed {party_person.title()} from the party invitation list. "
+#               f"Your party invitation list is now {invitation_list}")
+#     elif remove_party_person == "y":
+#         print(f"This is your party invitation list: {invitation_list}. No changes were made.")
+#
+#
+# invite_people()
+# continue_adding_question()
+# remove_person()
+
 # Challenge 78
+
+# tv_shows_list = ["Star Trek", "Game of Thrones", "Family Guy", "Naruto"]
+#
+# for tv_show in range(len(tv_shows_list)):
+#     print(tv_shows_list[tv_show])
+#
+# print(tv_shows_list)
+# add_tv_show = input("Enter another TV show: ")
+# added_tv_show_position = int(input(f"What position in the list do you want {add_tv_show} to go? Enter 0 to 4: "))
+# tv_shows_list.insert(added_tv_show_position, add_tv_show)
+# print(tv_shows_list)
+
 # Challenge 79
+
+# nums = []
+#
+# number_of_elements_in_nums = 3
+#
+#
+# def create_number_list():
+#
+#     for add_number in range(number_of_elements_in_nums):
+#         number = int(input("Enter a number: "))
+#         nums.append(number)
+#     print(nums)
+#
+#
+# create_number_list()
+#
+# last_number = nums[-1]
+#
+# add_more_numbers = input(f"\nDo you want {last_number} to remain in your number list? Y/N: ").lower()
+# if add_more_numbers == 'y':
+#     print(f"\nNo change was made to your number list")
+# elif add_more_numbers == 'n':
+#     nums.remove(nums[-1])
+#     print(f"\nYou have removed {last_number} from your number list. "
+#           f"\nYour new number list is {nums}")
+
+
 # Challenge 80
 # Challenge 81
 # Challenge 82
