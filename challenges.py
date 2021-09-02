@@ -971,6 +971,10 @@ import turtle as t
 #
 # t.exitonclick()
 
+############################################################################################
+##############                TUPLES, LISTS and DICTIONARIES           #####################
+############################################################################################
+
 # Challenge 69
 
 # country_names_tuple = ("USA", "Brazil", "Japan", "Germany", "Russia")
@@ -1187,6 +1191,9 @@ import turtle as t
 #     print(f"\nYou have removed {last_number} from your number list. "
 #           f"\nYour new number list is {nums}")
 
+############################################################################################
+##############                 MORE STRING MANIPULATION                #####################
+############################################################################################
 
 # Challenge 80
 # Challenge 81
