@@ -1196,13 +1196,100 @@ import turtle as t
 ############################################################################################
 
 # Challenge 80
+
+# name = input("Enter your first name: ")
+# print(len(name))
+#
+# surname = input("Enter your surname: ")
+# print(len(surname))
+#
+# whole_name = name + " " + surname
+# print(whole_name)
+# print(len(whole_name))
+
 # Challenge 81
+
+# favorite_school_subject = input("Enter your favorite school subject: ").title()
+#
+# for letter in favorite_school_subject:
+#     print(letter, end="-")
+
 # Challenge 82
+
+# line_poem = "And that has made all the difference"
+# start_index = len(line_poem) - len(line_poem)
+# end_index = len(line_poem)
+#
+# start_point_user = int(input(f"Enter a number between {start_index} and {end_index}: "))
+# end_point_user = int(input(f"Enter another number between {start_index} and {end_index}: "))
+#
+# print(f"\n{line_poem[start_index:end_index]}")
+
 # Challenge 83
+
+# word = input("Type a word in uppercase: ")
+#
+# while word.islower():
+#     try_again = input("Try again. Type a word in uppercase: ")
+#
+#     if try_again.islower():
+#         continue
+#     elif try_again.isupper():
+#         break
+
 # Challenge 84
+
+# postcode = input("Enter your postcode: ")
+#
+# print(postcode)
+#
+# first_two_letters = postcode.replace(postcode[0:2], postcode[0:2].upper())
+# print(first_two_letters)
+
 # Challenge 85
+
+# vowels = "aeiouy"
+# vowel_counter = 0
+#
+# name = input("Enter your name: ")
+# print(name)
+#
+# for letter in name:
+#     if letter in vowels:
+#         vowel_counter += 1
+#
+# print(f"Your name has {vowel_counter} vowels in it")
+
 # Challenge 86
+
+# password_first_entry = input("Enter a password: ")
+# password_second_entry = input("Enter the password again: ")
+#
+# if password_second_entry == password_first_entry:
+#     print("\nThank you")
+# elif password_first_entry.isupper() or password_second_entry.isupper():
+#     print("\nThey must be in the same case")
+# else:
+#     print("\nIncorrect")
+
 # Challenge 87
+
+# word = input("Enter a word: ")
+# # list_word = list(word)
+# word_reversed = ""
+#
+# print(f"\nWord: {word}")
+#
+# for letter in word:
+#     for new_line in range(len(word)):
+#         word_reversed = (word[::-1])
+#
+# print(f"\nReversed word: {word_reversed}")
+
+############################################################################################
+##############                       NUMERIC ARRAYS                    #####################
+############################################################################################
+
 # Challenge 88
 # Challenge 89
 # Challenge 90
