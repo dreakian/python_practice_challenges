@@ -1,6 +1,6 @@
-############################################################################################
-##############################     THE BASICS     ##########################################
-############################################################################################
+# ###########################################################################################
+# #############################     THE BASICS     ##########################################
+# ###########################################################################################
 
 # #Challenge 1
 
@@ -84,9 +84,9 @@
 # {difference} times.
 # """)
 
-############################################################################################
-##############################     IF STATEMENTS   #########################################
-############################################################################################
+# ###########################################################################################
+# #############################     IF STATEMENTS   #########################################
+# ###########################################################################################
 
 # Challenge 12
 
@@ -179,9 +179,9 @@
 # else:
 #     print("\nError message")
 
-############################################################################################
-################                 STRINGS AND NUMBERS AS VARIABLES             ##############
-############################################################################################
+# ###########################################################################################
+# ###############                 STRINGS AND NUMBERS AS VARIABLES             ##############
+# ###########################################################################################
 
 # Challenge 20
 #
@@ -290,9 +290,9 @@
 #     Pig Latin word: {pig_latin_word_if_starting_letter_is_consonant}
 #     """)
 
-############################################################################################
-###########################                 MATHS             ##############################
-############################################################################################
+# ###########################################################################################
+# ##########################                 MATHS             ##############################
+# ###########################################################################################
 
 # Challenge 27
 
@@ -382,9 +382,9 @@
 #     print("\nYou did not make a valid selection")
 
 
-############################################################################################
-###########################                 FOR LOOPS         ##############################
-############################################################################################
+# ###########################################################################################
+# ##########################                 FOR LOOPS         ##############################
+# ###########################################################################################
 
 # Challenge 35
 
@@ -485,9 +485,9 @@
 # elif people_to_invite >= 10:
 #     print("\nToo many people")
 
-############################################################################################
-###########################             WHILE LOOPS           ##############################
-############################################################################################
+# ###########################################################################################
+# ##########################             WHILE LOOPS           ##############################
+# ###########################################################################################
 
 # Challenge 45
 #
@@ -613,9 +613,9 @@
 # elif changed_num == 0:
 #     print("\nThere are no more green bottles hanging on the wall")
 
-############################################################################################
-##############################          RANDOM           ###################################
-############################################################################################
+# ###########################################################################################
+# #############################          RANDOM           ###################################
+# ###########################################################################################
 
 # Challenge 52
 
@@ -757,9 +757,9 @@
 # if user_choice == random_color:
 #     print("\nWell done")
 
-############################################################################################
-##############################        TURTLE GRAPHICS           ############################
-############################################################################################
+# ###########################################################################################
+# #############################        TURTLE GRAPHICS           ############################
+# ###########################################################################################
 
 # Challenge 60
 
@@ -775,7 +775,7 @@
 
 # Challenge 61
 
-import turtle as t
+# import turtle as t
 
 # t.hideturtle()
 #
@@ -971,9 +971,9 @@ import turtle as t
 #
 # t.exitonclick()
 
-############################################################################################
-##############                TUPLES, LISTS and DICTIONARIES           #####################
-############################################################################################
+# ###########################################################################################
+# #############                TUPLES, LISTS and DICTIONARIES           #####################
+# ###########################################################################################
 
 # Challenge 69
 
@@ -1191,9 +1191,9 @@ import turtle as t
 #     print(f"\nYou have removed {last_number} from your number list. "
 #           f"\nYour new number list is {nums}")
 
-############################################################################################
-##############                 MORE STRING MANIPULATION                #####################
-############################################################################################
+# ###########################################################################################
+# #############                 MORE STRING MANIPULATION                #####################
+# ###########################################################################################
 
 # Challenge 80
 
@@ -1286,17 +1286,161 @@ import turtle as t
 #
 # print(f"\nReversed word: {word_reversed}")
 
-############################################################################################
-##############                       NUMERIC ARRAYS                    #####################
-############################################################################################
+# ###########################################################################################
+# #############                       NUMERIC ARRAYS                    #####################
+# ###########################################################################################
 
 # Challenge 88
+
+# from array import *
+#
+# number_list_size = 5
+# number_list = []
+#
+# for add_number in range(1, number_list_size + 1):
+#     add_number = int(input("Enter a number: "))
+#     number_list.append(add_number)
+#     number_array = array("i", number_list)
+#
+# print(f"\nOriginal array: {number_array}")
+#
+# number_array.reverse()
+#
+# print(f"\nReversed array: {number_array}")
+
 # Challenge 89
+#
+# from array import *
+# import random as r
+#
+# amount_of_random_numbers = 5
+# random_number_list = []
+# random_number_array = ""
+#
+# for create_random_number in range(amount_of_random_numbers):
+#     random_number = r.randint(0, 100)
+#     random_number_list.append(random_number)
+#     random_number_array = array("i", random_number_list)
+#
+# print(random_number_array)
+#
+# for random_number_in_array in random_number_array:
+#     print(random_number_in_array)
+
 # Challenge 90
+
+# from array import *
+#
+# numbers_added_to_array = 0
+# number_list = []
+# number_array = ""
+#
+# while True:
+#     number = int(input("Enter a number between 10 and 20: "))
+#     if number < 10 or number > 20:
+#         print("\nOutside the range")
+#
+#     elif number >= 10 or number <= 20:
+#         number_list.append(number)
+#         number_array = array("i", number_list)
+#         numbers_added_to_array += 1
+#
+#     if numbers_added_to_array == 5:
+#         print("\nThank you")
+#         print(f"\n{number_array}")
+#         for number in number_array:
+#             print(number)
+#         break
+
 # Challenge 91
+
+# from array import *
+#
+# number_array = array("i", [2, 63, 71, 63, 1235])
+# # print(number_array)
+#
+# number = int(input("Enter a number from the array: "))
+# print(f"\n{number} occurs {number_array.count(number)} time(s) in the array")
+
 # Challenge 92
+
+# from array import *
+# import random as r
+#
+# amount_of_numbers_in_random_array = 5
+# amount_of_numbers_in_user_array = 3
+#
+# random_array_list = []
+# user_array_list = []
+#
+#
+# def create_random_array():
+#     random_array = ""
+#     for random_number in range(amount_of_numbers_in_random_array):
+#         random_number = r.randint(0, 100)
+#         random_array_list.append(random_number)
+#         random_array = array("i", random_array_list)
+#     print(f"\nRandom array: {random_array}")
+#
+#
+# def create_user_array():
+#     user_array = ""
+#     for user_number in range(amount_of_numbers_in_user_array):
+#         user_number = int(input("Enter a number: "))
+#         user_array_list.append(user_number)
+#         user_array = array("i", user_array_list)
+#     print(f"\nUser array: {user_array}")
+#
+#
+# def create_sorted_and_joined_array():
+#     # joined_list = []
+#     sorted_and_joined_array = ""
+#     joined_list = random_array_list + user_array_list
+#     joined_list.sort()
+#
+#     sorted_and_joined_array = array('i', joined_list)
+#     print(f"\nSorted and joined array: {sorted_and_joined_array}")
+#
+#
+# def display_elements_of_final_array():
+#     sorted_and_joined_array = ""
+#     for number in sorted_and_joined_array:
+#         print(number)
+#
+#
+# create_random_array()
+# create_user_array()
+# create_sorted_and_joined_array()
+# display_elements_of_final_array()
+
 # Challenge 93
+
+# from array import *
+#
+# numbers_in_array = 5
+# number_array_list = []
+#
+# for number in range(numbers_in_array):
+#     number = int(input("Enter a number: "))
+#     number_array_list.append(number)
+#
+# number_array = array("i", number_array_list)
+# print(f"\nOriginal array: {number_array}")
+#
+# print(f"\nSorted array list: {sorted(number_array_list)}")
+#
+# remove_number_from_array_list = int(input("\nEnter a number from the list to remove it: "))
+#
+# number_array_list.remove(remove_number_from_array_list)
+#
+# updated_number_array = array("i", sorted(number_array_list))
+#
+# print(f"\nUpdated array: {updated_number_array}")
+
 # Challenge 94
+
+
+
 # Challenge 95
 # Challenge 96
 # Challenge 97
