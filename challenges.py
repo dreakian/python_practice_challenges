@@ -1494,8 +1494,71 @@
 #     print(f"\nDivided and rounded array: {divided_number_list}")
 #     break
 
+# ###########################################################################################
+# #############                 2D Lists and Dictionaries               #####################
+# ###########################################################################################
+
 # Challenge 96
+
+# simple_array = [[2, 5, 8],
+#                 [3, 7, 4],
+#                 [1, 6, 9]]
+# print(simple_array)
+
 # Challenge 97
+
+# simple_array = [[2, 5, 8],
+#                 [3, 7, 4],
+#                 [1, 6, 9]]
+
+# print(simple_array)
+# select_column = int(input("Choose a column, between 0 and 2: "))
+# select_row = int(input("Choose a row, between 0 and 2: "))
+#
+# print(simple_array[select_column][select_row])
+
 # Challenge 98
+
+# simple_array = [[2, 5, 8],
+#                 [3, 7, 4],
+#                 [1, 6, 9]]
+# print(simple_array)
+#
+# select_row = int(input("Choose a row, between 0 and 2: "))
+#
+# print(simple_array[:][select_row])
+#
+# new_value = int(input("Enter a new value, which will be added to the row you previously selected: "))
+#
+# simple_array[select_row].append(new_value)
+# print(simple_array[select_row])
+
 # Challenge 99
+
+simple_array = [[2, 5, 8],
+                [3, 7, 4],
+                [1, 6, 9]]
+print(simple_array)
+
+select_row = int(input("\nChoose a row, between 0 and 2: "))
+
+print(simple_array[:][select_row])
+
+select_column = int(input("\nChoose a column, between 0 and 2: "))
+
+selected_value = simple_array[select_row][select_column]
+print(f"\nThe selected value of Row {select_row} and Column {select_column} is: {selected_value}")
+
+choice_selected_value = input(f"\nDo you want to change the value {selected_value}? Y/N: ").lower()
+
+if choice_selected_value == 'y':
+    new_value = int(input(f"\nEnter a new value for the selected value at Row {select_row} and Column {select_column}: "))
+
+print(f"\nThe new value for Row {select_row} and Column {select_column} is: {new_value}")
+
+
+
+
+
+
 # Challenge 100
