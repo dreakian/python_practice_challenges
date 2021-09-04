@@ -1439,9 +1439,61 @@
 
 # Challenge 94
 
-
+# from array import *
+#
+# number_list = [1, 2, 3, 4, 5]
+#
+# continue_loop = True
+#
+# number_array = array("i", number_list)
+# print(number_array)
+#
+# select_number = int(input("Enter a number from the array: "))
+#
+# while continue_loop:
+#
+#     if select_number in number_array:
+#         print(f"\nEntered number: {select_number}"
+#               f"\n"
+#               f"\nPosition of entered number in the array: {number_array.index(select_number)}")
+#         break
+#
+#     elif select_number not in number_array:
+#         print("\nTry again")
+#         select_number = int(input("\nEnter a number from the array: "))
 
 # Challenge 95
+
+# from array import *
+#
+# number_list = [10.63, 30.34, 60.12, 90.21, 100.99]
+# continue_loop = True
+# division_array_result = 0
+# divided_number_list = []
+#
+# number_array = array("d", number_list)
+#
+# user_number = int(input("\nEnter a whole number between 2 and 5: "))
+#
+# while continue_loop:
+#
+#     if user_number < 2:
+#         print("\nYou entered a number less than 2. Try again.")
+#         user_number = int(input("\nEnter a whole number between 2 and 5: "))
+#
+#     elif user_number > 5:
+#         print("\nYou entered a number more than 5. Try again.")
+#         user_number = int(input("\nEnter a whole number between 2 and 5: "))
+#
+#     elif user_number >= 2 or user_number <= 5:
+#         for number in number_array:
+#             division_array_result = round((number / user_number), 2)
+#             divided_number_list.append(division_array_result)
+#
+#     print(f"\nOriginal array: {number_array}")
+#     print(f"\nDivided and rounded array: {divided_number_list}")
+#     break
+
 # Challenge 96
 # Challenge 97
 # Challenge 98
