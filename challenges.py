@@ -1473,17 +1473,17 @@
 #
 # number_array = array("d", number_list)
 #
-# user_number = int(input("\nEnter a whole number between 2 and 5: "))
-#
 # while continue_loop:
 #
-#     if user_number < 2:
-#         print("\nYou entered a number less than 2. Try again.")
-#         user_number = int(input("\nEnter a whole number between 2 and 5: "))
+#     user_number = int(input("\nEnter a whole number between 2 and 5: "))
 #
-#     elif user_number > 5:
-#         print("\nYou entered a number more than 5. Try again.")
-#         user_number = int(input("\nEnter a whole number between 2 and 5: "))
+#     if user_number < 2 or user_number > 5:
+#         if user_number < 2:
+#             print("\nYou entered a number less than 2. Try again.")
+#             continue
+#         elif user_number > 5:
+#             print("\nYou entered a number more than 5. Try again.")
+#             continue
 #
 #     elif user_number >= 2 or user_number <= 5:
 #         for number in number_array:
@@ -1535,30 +1535,144 @@
 
 # Challenge 99
 
-simple_array = [[2, 5, 8],
-                [3, 7, 4],
-                [1, 6, 9]]
-print(simple_array)
-
-select_row = int(input("\nChoose a row, between 0 and 2: "))
-
-print(simple_array[:][select_row])
-
-select_column = int(input("\nChoose a column, between 0 and 2: "))
-
-selected_value = simple_array[select_row][select_column]
-print(f"\nThe selected value of Row {select_row} and Column {select_column} is: {selected_value}")
-
-choice_selected_value = input(f"\nDo you want to change the value {selected_value}? Y/N: ").lower()
-
-if choice_selected_value == 'y':
-    new_value = int(input(f"\nEnter a new value for the selected value at Row {select_row} and Column {select_column}: "))
-
-print(f"\nThe new value for Row {select_row} and Column {select_column} is: {new_value}")
-
-
-
-
-
+# simple_array = {"0": {"x": 2, "y": 5, "z": 8},
+#                 "1": {"x": 3, "y": 7, "z": 4},
+#                 "2": {"x": 1, "y": 6, "z": 9}}
+#
+# select_row = input("\nChoose a row between 0 and 2: ")
+# select_column = input("\nChoose a column, using the following: x , y , z:  ")
+#
+# selected_value = simple_array[select_row][select_column]
+# print(f"\nThe selected value is {selected_value}")
+#
+# change_selected_value = input(f"\nDo you want to change the selected value of {selected_value}? Y/N: ").lower()
+#
+# if change_selected_value == 'y':
+#     new_value = int(input("\nEnter a new value to replace the selected value: "))
+#     simple_array[select_row][select_column] = new_value
+#     print(f"\nThe selected value of Row {select_row} and Column {select_column} has changed.")
+#     print("\nThe updated row is displayed below: ")
+#
+# print(simple_array[select_row])
 
 # Challenge 100
+
+# sales_dict = {"John": {"N": 3085, "S": 8463, "E": 8441, "W": 2694},
+#               "Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
+#               "Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
+#               "Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+#
+# print(sales_dict)
+
+# Challenge 101
+
+# sales_dict = {"John": {"N": 3085, "S": 8463, "E": 8441, "W": 2694},
+#               "Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
+#               "Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
+#               "Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+#
+# select_name = input("Enter the name of a sales person: John, Tom, Anne, Fiona: ").title()
+# select_region = input("Enter a region: N, S, E, W: ").upper()
+# print(sales_dict[select_name][select_region])
+#
+# new_select_name = input("Enter the name of a sales person: John, Tom, Anne, Fiona: ").title()
+# new_select_region = input("Enter a region: N, S, E, W: ").upper()
+# print(f"You will now be prompted to change the {new_select_region} region sales figure for {new_select_name}")
+#
+# change_sales_figure = int(input("Enter a new sales figure: "))
+#
+# sales_dict[new_select_name][new_select_region] = change_sales_figure
+#
+# print(sales_dict[new_select_name][new_select_region])
+# print(sales_dict[new_select_name])
+
+# Challenge 102
+
+# names_list = []
+# shoe_info_dict = {}
+#
+# for name in range(4):
+#     name = input("Enter a name: ").lower()
+#     age = input("Enter an age: ")
+#     shoe_size = input("Enter a shoe size: ")
+#     shoe_info_dict[name] = [age, shoe_size]
+#     names_list.append(name)
+#
+# enter_name = input(f"Enter a name: {names_list[0]}, {names_list[1]}, {names_list[2]}, {names_list[3]}: ").lower()
+#
+# print(f"The age and shoe size for {enter_name} is {shoe_info_dict[enter_name]}")
+
+# Challenge 103
+
+names_list = []
+shoe_info_dict = {}
+
+for name in range(4):
+    name = input("Enter a name: ").lower()
+    age = input("Enter an age: ")
+    shoe_size = input("Enter a shoe size: ")
+    shoe_info_dict[name] = [age, shoe_size]
+    names_list.append(name)
+
+enter_name = input(f"Enter a name: {names_list[0]}, {names_list[1]}, {names_list[2]}, {names_list[3]}: ").lower()
+
+print(f"The age and shoe size for {enter_name} is {shoe_info_dict[enter_name]}")
+
+
+
+
+
+
+
+
+
+
+# Challenge 104
+# Challenge 105
+# Challenge 106
+# Challenge 107
+# Challenge 108
+# Challenge 109
+# Challenge 110
+# Challenge 111
+# Challenge 112
+# Challenge 113
+# Challenge 114
+# Challenge 115
+# Challenge 116
+# Challenge 117
+# Challenge 118
+# Challenge 119
+# Challenge 120
+# Challenge 121
+# Challenge 122
+# Challenge 123
+# Challenge 124
+# Challenge 125
+# Challenge 126
+# Challenge 127
+# Challenge 128
+# Challenge 129
+# Challenge 130
+# Challenge 131
+# Challenge 132
+# Challenge 133
+# Challenge 134
+# Challenge 135
+# Challenge 136
+# Challenge 137
+# Challenge 138
+# Challenge 139
+# Challenge 140
+# Challenge 141
+# Challenge 142
+# Challenge 143
+# Challenge 144
+# Challenge 145
+# Challenge 146
+# Challenge 147
+# Challenge 148
+# Challenge 149
+# Challenge 150
+
+
