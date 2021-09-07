@@ -3,7 +3,7 @@ Practice problems come from the book: "Python by Example: Learning to Program in
 
 This file will be updated to reflect my progress in completing the challenges from this book. 
 
-Below is the table of contents for the document. An "--- COMPLETE" indicates a completed section. 
+Below is the table of contents for the document. 
 
 Part 1: Learning Python
 
@@ -18,8 +18,8 @@ Part 1: Learning Python
 * Challenges 69 - 79: Tuples, Lists and Dictionaries --- COMPLETE
 * Challenges 80 - 87: More String Manipulation --- COMPLETE
 * Challenges 88 - 95: Numeric Arrays --- COMPLETE
-* Challenges 96 - 103: 2D Lists and Dictionaries --- WIP
-* Challenges 105 - 110: Reading and Writing to a Text File 
+* Challenges 96 - 103: 2D Lists and Dictionaries --- COMPLETE
+* Challenges 105 - 110: Reading and Writing to a Text File --- WIP
 * Challenges 111 - 117: Reading and Writing to a .csv File
 * Challenges 118 - 123: Subprograms
 * Challenges 124 - 132: Tkinter GUI
