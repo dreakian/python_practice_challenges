@@ -1586,7 +1586,7 @@
 # print(sales_dict[new_select_name][new_select_region])
 # print(sales_dict[new_select_name])
 
-# Challenge 102
+# Challenge 102 # SIMPLIFY CODE
 
 # names_list = []
 # shoe_info_dict = {}
@@ -1604,30 +1604,40 @@
 
 # Challenge 103
 
-names_list = []
-shoe_info_dict = {}
-
-for name in range(4):
-    name = input("Enter a name: ").lower()
-    age = input("Enter an age: ")
-    shoe_size = input("Enter a shoe size: ")
-    shoe_info_dict[name] = [age, shoe_size]
-    names_list.append(name)
-
-enter_name = input(f"Enter a name: {names_list[0]}, {names_list[1]}, {names_list[2]}, {names_list[3]}: ").lower()
-
-print(f"The age and shoe size for {enter_name} is {shoe_info_dict[enter_name]}")
-
-
-
-
-
-
-
-
-
+# shoe_info_list = []
+# users = 4
+#
+# for user in range(1, users + 1):
+#     name = input("Enter a name: ").lower()
+#     age = int(input("Enter an age: "))
+#     shoe_size = int(input("Enter a shoe size: "))
+#     shoe_info_list.append(name)
+#     shoe_info_list.append(age)
+#
+# print(shoe_info_list)
 
 # Challenge 104
+
+# shoe_info_dict = {}
+# users = 4
+#
+# for user in range(1, users + 1):
+#     name = input("Enter a name: ")
+#     age = int(input("Enter an age: "))
+#     shoe_size = int(input("Enter a shoe size: "))
+#     shoe_info_dict[name] = [age, shoe_size]
+#
+# print(f"Original dictionary: {shoe_info_dict}")
+#
+# delete_row = input("\nEnter the name of someone you want to remove from the list: ")
+#
+# for key in list(shoe_info_dict):
+#     if key == delete_row:
+#         del shoe_info_dict[key]
+#
+# print(f"\nModified dictionary: {shoe_info_dict}")
+
+
 # Challenge 105
 # Challenge 106
 # Challenge 107
