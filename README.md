@@ -19,8 +19,8 @@ Part 1: Learning Python
 * Challenges 80 - 87: More String Manipulation --- COMPLETE
 * Challenges 88 - 95: Numeric Arrays --- COMPLETE
 * Challenges 96 - 103: 2D Lists and Dictionaries --- COMPLETE
-* Challenges 105 - 110: Reading and Writing to a Text File --- WIP
-* Challenges 111 - 117: Reading and Writing to a .csv File
+* Challenges 105 - 110: Reading and Writing to a Text File --- COMPLETE
+* Challenges 111 - 117: Reading and Writing to a .csv File --- WIP
 * Challenges 118 - 123: Subprograms
 * Challenges 124 - 132: Tkinter GUI
 * Challenges 133 - 138: More Tkinter
