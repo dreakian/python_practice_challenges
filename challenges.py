@@ -1637,19 +1637,229 @@
 #
 # print(f"\nModified dictionary: {shoe_info_dict}")
 
+# ###########################################################################################
+# #############            READING AND WRITING TO A TEXT FILE           #####################
+# ###########################################################################################
 
 # Challenge 105
+
+# file = open("Numbers.txt", "w")
+# file.write("1,")
+# file.write("2,")
+# file.write("3,")
+# file.write("4,")
+# file.write("5")
+# file.close()
+
 # Challenge 106
+
+# file = open("Names.txt", "w")
+# file.write("Lyon\n")
+# file.write("Isabelle\n")
+# file.write("Carlos\n")
+# file.write("Sandra\n")
+# file.write("Pusheen\n")
+# file.close()
+
 # Challenge 107
+
+# file = open("Names.txt", "r")
+# print(file.read())
+# file.close()
+
 # Challenge 108
+
+# file = open("Names.txt", "a")
+# new_name = input("Enter a new name to the file: ")
+# file.write(new_name)
+# file.close()
+# file = open("Names.txt", "r")
+# print(file.read())
+# file.close()
+
 # Challenge 109
+
+# print(f"""
+# 1) Create a new file
+# 2) Display the file
+# 3) Add a new item to the file
+#
+# Make a selection 1, 2 or 3:
+# """)
+#
+# valid_options = 1, 2, 3
+# user_choice = int(input("Enter 1, 2 or 3: "))
+#
+# if user_choice not in valid_options:
+#     print("You did not enter a valid option")
+# elif user_choice == 1:
+#     file = open("Subject.txt", "w")
+#     school_subject = input("Enter a school subject: ")
+#     file.write(school_subject)
+#     file.close()
+# elif user_choice == 2:
+#     file = open("Subject.txt", "r")
+#     print(file.read())
+#     file.close()
+# elif user_choice == 3:
+#     file = open("Subject.txt", "a")
+#     new_school_subject = input("Enter a new school subject: ")
+#     file.write(" " + new_school_subject)
+#     file.close()
+#     file = open("Subject.txt", "r")
+#     print(file.read())
+
 # Challenge 110
+
+# file_one = open("Names.txt", "r")
+# print(file_one.read())
+# file_one.close()
+#
+# file_one = open("Names.txt", "r")
+# choose_name = input("Enter a name from the list: ")
+# choose_name = choose_name + "\n"
+# for name in file_one:
+#     if name != choose_name:
+#         file_two = open("Names2.txt", "a")
+#         new_line = name
+#         file_two.write(new_line)
+#         file_two.close()
+# file_one.close()
+
+# ###########################################################################################
+# #############            READING AND WRITING TO A .CSV FILE           #####################
+# ###########################################################################################
+
 # Challenge 111
+#
+# import csv
+#
+# file = open("Books.csv", "w")
+#
+# title_row = "Book, Author, Year Released\n"
+#
+# file.write(str(title_row))
+#
+# row_one = "To Kill A Mockingbird, Harper Lee, 1960\n"
+# row_two = "To Brief History of Time, Stephen Hawking, 1988\n"
+# row_three = "The Great Gatsby, F. Scott Fitzgerald, 1922\n"
+# row_four = "The Man Who Mistook His Wife for a Hat, Oliver Sacks, 1985\n"
+# row_five = "Pride and Prejudice, Jane Austen, 1813\n"
+# file.write(str(row_one))
+# file.write(str(row_two))
+# file.write(str(row_three))
+# file.write(str(row_four))
+# file.write(str(row_five))
+# file.close()
+
 # Challenge 112
+
+
+# import csv
+#
+# file = open("Books.csv", "w")
+#
+# title_row = "Book, Author, Year Released\n"
+#
+# file.write(str(title_row))
+#
+# row_one = "To Kill A Mockingbird, Harper Lee, 1960\n"
+# row_two = "To Brief History of Time, Stephen Hawking, 1988\n"
+# row_three = "The Great Gatsby, F. Scott Fitzgerald, 1922\n"
+# row_four = "The Man Who Mistook His Wife for a Hat, Oliver Sacks, 1985\n"
+# row_five = "Pride and Prejudice, Jane Austen, 1813\n"
+# file.write(str(row_one))
+# file.write(str(row_two))
+# file.write(str(row_three))
+# file.write(str(row_four))
+# file.write(str(row_five))
+#
+# add_title = input("Enter the title for the book: ").title()
+# add_author = input("Enter the author of the book: ").title()
+# add_year_released = input("Enter the year the book was released: ")
+#
+# row_six = add_title + "," + add_author + "," + add_year_released + "\n"
+# file.write(str(row_six))
+#
+# file.close()
+
+
 # Challenge 113
+
+# import csv
+#
+# file = open("Books.csv", "a")
+#
+# add_book_amount = int(input("How many books would you like to add to the csv file?: "))
+#
+# for item in range(add_book_amount):
+#     add_book_title = input("Enter the title of the book: ")
+#     add_book_author = input("Enter the author of the book: ")
+#     add_book_year_published = input("Enter the year the book was published: ")
+#
+#     add_row = add_book_title + "," + add_book_author + "," + add_book_year_published + "\n"
+#     file.write(add_row)
+#
+# file.close()
+#
+# print("\nYou will now be asked to enter an author's name to check if any of their books are in the file.")
+#
+# file = open("Books.csv", "r")
+# search_by_author = input("\nEnter an author's name: ")
+# reader = csv.reader(file)
+#
+# for row in file:
+#     if search_by_author in str(row):
+#         print("\n")
+#         print(row)
+#     # else:
+#     #     print(f"{search_by_author} not in file")
+#
+# file.close()
+
 # Challenge 114
+
+# import csv
+#
+# start_year = int(input("Enter a start year: "))
+# end_year = int(input("Enter an end year: "))
+#
+# file = list(csv.reader(open("Books.csv")))
+# temp = []
+#
+# for row in file:
+#     temp.append(row)
+#
+# x = 0
+#
+# for row in temp:
+#     if int(temp[x][2]) >= start_year and int(temp[x][2]) <= end_year:
+#         print(temp[x])
+#     x += 1
+
 # Challenge 115
+
+# import csv
+#
+# file = list(csv.reader(open("Books.csv")))
+#
+# row_index = 0
+#
+# for row in file:
+#     row_index += 1
+#     row = str(row_index) + " " + str(row)
+#     print(row)
+
 # Challenge 116
+
+# Convert data from csv file as a list
+# Print the list
+# Remove row of data corresponding to user-inputted row number
+# Create temp file
+# Copy the csv data (as a list) to the temp file
+# Allow user to change the data that is in the temp file
+# Once changes are finalized, amend the changes to the original csv file
+
 # Challenge 117
 # Challenge 118
 # Challenge 119
